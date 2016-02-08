@@ -24,6 +24,7 @@
     <groupId>com.viskan</groupId>
     <artifactId>checkstyle-configuration</artifactId>
     <version>1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>Viskan Distanshandel System AB :: Checkstyle configuration</name>
     <description>Contains checkstyle configurations for Viskan projects.</description>
     <url>https://github.com/viskan/checkstyle-configuration</url>
