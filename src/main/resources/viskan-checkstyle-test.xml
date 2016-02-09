@@ -245,7 +245,7 @@
 		<!-- <property name="max" value="80"/> -->
 		<!--
 		<module name="LineLength">
-			<property name="max" value="150"/>
+			<property name="max" value="200"/>
 		</module>
 		-->
 		
