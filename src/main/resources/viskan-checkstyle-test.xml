@@ -836,6 +836,16 @@
         <property name="message" value="Redundant blank line(s)" />
         <property name="fileExtensions" value="java" />
     </module>
+
+    <module name="RegexpSingleline">
+        <property name="format" value="^\t" />
+        <property name="message" value="Indentations must use spaces characters" />
+    </module>
+
+    <module name="RegexpSingleline">
+        <property name="format" value="^(?!\s+\* $).*?\s+$" />
+        <property name="message" value="Line has trailing spaces" />
+    </module>
 	
 	<!-- See http://checkstyle.sourceforge.net/config_duplicates.html -->
 	<!-- Performs a line-by-line comparison of all code lines and 
