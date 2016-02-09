@@ -112,8 +112,7 @@
 		<!-- Checks for Naming Conventions.                  -->
 		<!-- <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/> -->
         <module name="ConstantName">
-            <property name="format"
-                value="instance|all|log|(^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$)" />
+            <property name="format" value="instance|all|log|(^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$)" />
         </module>
 		
 		<!-- See http://checkstyle.sourceforge.net/config_naming.html -->
@@ -173,8 +172,7 @@
 		<!-- <property name="applyToPackage" value="true"/> -->
 		<!-- <property name="applyToPrivate" value="true"/> -->
         <module name="TypeName">
-            <property name="format"
-                value="^[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*)*$" />
+            <property name="format" value="^[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*)*$" />
             <property name="tokens" value="CLASS_DEF, INTERFACE_DEF" />
         </module>
 		
@@ -404,8 +402,7 @@
 		LITERAL_TRY, LITERAL_WHILE, INSTANCE_INIT STATIC_INIT"/> -->
         <module name="EmptyBlock">
             <property name="option" value="text" />
-            <property name="tokens"
-                value="LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_IF, LITERAL_FOR, LITERAL_TRY, LITERAL_WHILE, INSTANCE_INIT, STATIC_INIT" />
+            <property name="tokens" value="LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_IF, LITERAL_FOR, LITERAL_TRY, LITERAL_WHILE, INSTANCE_INIT, STATIC_INIT" />
         </module>
 		
 		<!-- See http://checkstyle.sourceforge.net/config_blocks.html -->

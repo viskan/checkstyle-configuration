@@ -103,8 +103,7 @@
 		<!-- Checks for Naming Conventions.                  -->
 		<!-- <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/> -->
         <module name="ConstantName">
-            <property name="format"
-                value="instance|all|log|(^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$)" />
+            <property name="format" value="instance|all|log|(^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$)" />
         </module>
 		
 		<!-- See http://checkstyle.sourceforge.net/config_naming.html -->
@@ -164,8 +163,7 @@
 		<!-- <property name="applyToPackage" value="true"/> -->
 		<!-- <property name="applyToPrivate" value="true"/> -->
         <module name="TypeName">
-            <property name="format"
-                value="^[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*)*$" />
+            <property name="format" value="^[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*)*$" />
             <property name="tokens" value="CLASS_DEF, INTERFACE_DEF" />
         </module>
 		
@@ -579,8 +577,7 @@
                     java.util.HashSet, java.util.HashMap, java.util.ArrayList,
                     java.util.LinkedHashMap,
                     java.util.LinkedHashSet " />
-            <property name="legalAbstractClassNames"
-                value="AbstractWrappedValueModel, AbstractValueModel, AbstractHyperlinkAction" />
+            <property name="legalAbstractClassNames" value="AbstractWrappedValueModel, AbstractValueModel, AbstractHyperlinkAction" />
         </module>
 		
 		<!-- See http://checkstyle.sourceforge.net/config_coding.html -->
