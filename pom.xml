@@ -52,6 +52,17 @@
         <developerConnection>scm:git:git@github.com:viskan/checkstyle-configuration.git</developerConnection>
     </scm>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ViskanSnapshots</id>
+            <url>http://maven01.viskan.se:8081/nexus/content/repositories/ViskanSnapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ViskanReleases</id>
+            <url>http://maven01.viskan.se:8081/nexus/content/repositories/ViskanReleases</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
