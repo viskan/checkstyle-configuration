@@ -697,7 +697,10 @@
     <!-- See http://checkstyle.sourceforge.net/config_misc.html#Translation -->
     <!-- Checks that property files contain the same keys. -->
     <!-- <property name="fileExtensions" value="properties"/> -->
+
+    <!--
     <module name="Translation">
     </module>
+    -->
 
 </module>
