@@ -49,8 +49,8 @@
         <url>https://github.com/viskan/checkstyle-configuration</url>
         <connection>scm:git:git://github.com/viskan/checkstyle-configuration.git</connection>
         <developerConnection>scm:git:git@github.com:viskan/checkstyle-configuration.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <distributionManagement>
         <snapshotRepository>
