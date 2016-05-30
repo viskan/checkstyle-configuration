@@ -578,6 +578,12 @@
         <!-- A check for TODO: comments. Actually it is a generic regular expression matcher on Java comments. To check for other patterns in Java comments, set property format. -->
         <!-- <property name="format" value="TODO:"/> -->
         <module name="TodoComment">
+            <property name="format" value="TODO" />
+            <property name="severity" value="info" />
+        </module>
+        <module name="TodoComment">
+            <property name="format" value="FIXME" />
+            <property name="severity" value="info" />
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_misc.html -->
