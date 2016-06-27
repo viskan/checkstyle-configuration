@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.viskan</groupId>
     <artifactId>checkstyle-configuration</artifactId>
-    <version>3</version>
+    <version>4-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Viskan Distanshandel System AB :: Checkstyle configuration</name>
     <description>Contains checkstyle configurations for Viskan projects.</description>
@@ -57,7 +57,7 @@
         <url>https://github.com/viskan/checkstyle-configuration</url>
         <connection>scm:git:git://github.com/viskan/checkstyle-configuration.git</connection>
         <developerConnection>scm:git:git@github.com:viskan/checkstyle-configuration.git</developerConnection>
-        <tag>v3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
