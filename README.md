@@ -28,7 +28,9 @@ Contains Checkstyle configurations for Viskan projects.
                         <goal>check</goal>
                     </goals>
                     <configuration>
-                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                        <sourceDirectories>
+                            <sourceDirectory>src/main/java/</sourceDirectory>
+                        </sourceDirectories>
                         <includeResources>true</includeResources>
                         <includeTestResources>false</includeTestResources>
                         <configLocation>viskan-checkstyle-main.xml</configLocation>
@@ -41,7 +43,9 @@ Contains Checkstyle configurations for Viskan projects.
                         <goal>check</goal>
                     </goals>
                     <configuration>
-                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        <sourceDirectories>
+                            <sourceDirectory>src/test/java/</sourceDirectory>
+                        </sourceDirectories>
                         <includeResources>false</includeResources>
                         <includeTestResources>true</includeTestResources>
                         <configLocation>viskan-checkstyle-test.xml</configLocation>
