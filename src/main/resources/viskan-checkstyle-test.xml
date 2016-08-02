@@ -42,7 +42,8 @@
         <!-- <property name="authorFormat" value=""/> -->
         <!-- <property name="versionFormat" value=""/> -->
         <!-- <property name="tokens" value="INTERFACE_DEF, CLASS_DEF"/> -->
-        <!-- <module name="JavadocType"> </module> -->
+        <module name="JavadocType">
+        </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocMethod -->
         <!-- Checks to ensure that the javadoc tags exist (if required) -->
@@ -72,8 +73,12 @@
         <!-- <property name="checkEmptyJavadoc" value="false"/> -->
         <!-- <property name="checkHtml" value="true"/> -->
         <!-- <property name="tokens" value="INTERFACE_DEF, CLASS_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/> -->
-        <!-- <module name="JavadocStyle"> <property name="checkFirstSentence" value="false"/> <property name="checkHtml" value="false"/> <property name="checkEmptyJavadoc" value="true"/> <property name="tokens" 
-            value="INTERFACE_DEF, CLASS_DEF" /> </module> -->
+        <module name="JavadocStyle">
+            <property name="checkFirstSentence" value="false" />
+            <property name="checkHtml" value="false" />
+            <property name="checkEmptyJavadoc" value="true" />
+            <property name="tokens" value="INTERFACE_DEF, CLASS_DEF" />
+        </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_naming.html -->
         <!-- Checks for Naming Conventions. -->
