@@ -82,7 +82,7 @@
         <module name="JavadocStyle">
             <property name="checkFirstSentence" value="false" />
             <property name="checkHtml" value="false" />
-            <property name="checkEmptyJavadoc" value="false" />
+            <property name="checkEmptyJavadoc" value="true" />
             <property name="tokens" value="INTERFACE_DEF, CLASS_DEF" />
         </module>
 
