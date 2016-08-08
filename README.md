@@ -37,7 +37,7 @@ Contains Checkstyle configurations for Viskan projects.
                         <violationSeverity>warning</violationSeverity>
                     </configuration>
                 </execution>
-                    <execution>
+                <execution>
                     <id>checkstyle-test</id>
                     <goals>
                         <goal>check</goal>
