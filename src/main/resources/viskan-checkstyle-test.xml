@@ -653,6 +653,11 @@
         <property name="message" value="Line has trailing spaces" />
     </module>
 
+    <module name="RegexpSingleline">
+        <property name="format" value="^(?!((\s{4})*\S)|((\s{4})*\s\*)).+" />
+        <property name="message" value="Indentations must be of 4 spaces each" />
+    </module>
+
     <!-- See http://checkstyle.sourceforge.net/config_duplicates.html -->
     <!-- Performs a line-by-line comparison of all code lines and reports duplicate code. -->
     <!-- <property name="min" value="12"/> -->
