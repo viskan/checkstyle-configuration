@@ -684,6 +684,12 @@
         <property name="fileExtensions" value="java" />
     </module>
 
+    <module name="RegexpMultiline">
+        <property name="format" value="\{\s*\n\s*\n" />
+        <property name="message" value="Line is followed by redundant blank line(s)" />
+        <property name="fileExtensions" value="java" />
+    </module>
+
     <module name="RegexpSingleline">
         <property name="format" value="^\t" />
         <property name="message" value="Indentations must use spaces characters" />
