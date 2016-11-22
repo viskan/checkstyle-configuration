@@ -1,5 +1,7 @@
-# checkstyle-configuration
+# Checkstyle configuration
+
 Contains Checkstyle configurations for Viskan projects.
+
 
 ## Usage
 ```xml
@@ -13,7 +15,7 @@ Contains Checkstyle configurations for Viskan projects.
                 <dependency>
                     <groupId>com.viskan</groupId>
                     <artifactId>checkstyle-configuration</artifactId>
-                    <version>3</version>
+                    <version>5</version>
                 </dependency>
                 <dependency>
                     <groupId>com.puppycrawl.tools</groupId>
@@ -57,6 +59,7 @@ Contains Checkstyle configurations for Viskan projects.
     </plugins>
     ...
 ```
+
 
 ## License
 Apache License 2.0 © [Viskan Distanshandel System AB](http://viskan.com/)
