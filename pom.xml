@@ -23,7 +23,7 @@
     <artifactId>checkstyle-configuration</artifactId>
     <version>6-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Viskan Distanshandel System AB :: Checkstyle configuration</name>
+    <name>Viskan System AB :: Checkstyle configuration</name>
     <description>Contains checkstyle configurations for Viskan projects.</description>
     <url>https://github.com/viskan/checkstyle-configuration</url>
 

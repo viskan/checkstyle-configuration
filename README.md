@@ -62,4 +62,4 @@ Contains Checkstyle configurations for Viskan projects.
 
 
 ## License
-Apache License 2.0 © [Viskan Distanshandel System AB](http://viskan.com/)
+Apache License 2.0 © [Viskan System AB](http://viskan.com/)
