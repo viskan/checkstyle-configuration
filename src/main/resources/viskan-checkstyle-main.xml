@@ -7,11 +7,6 @@
 
     <property name="severity" value="warning" />
 
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="CSOFF" />
-        <property name="onCommentFormat" value="CSON" />
-    </module>
-
     <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#PackageHtml -->
     <!-- Checks that a package.html file exists for each package. -->
     <!-- <property name="fileExtensions" value="java"/> -->
@@ -26,7 +21,9 @@
 
         <property name="tabWidth" value="4" />
 
-        <module name="FileContentsHolder">
+        <module name="SuppressionCommentFilter">
+            <property name="offCommentFormat" value="CSOFF" />
+            <property name="onCommentFormat" value="CSON" />
         </module>
 
         <!-- [aab] add in order to check whitespaces -->
@@ -334,12 +331,10 @@
         <!-- See http://checkstyle.sourceforge.net/config_blocks.html -->
         <!-- Checks for the placement of left curly braces ('{') for code blocks. -->
         <!-- <property name="option" value="eol"/> -->
-        <!-- <property name="maxLineLength" value="80"/> -->
         <!-- <property name="tokens" value="CLASS_DEF, CTOR_DEF, INTERFACE_DEF, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR, LITERAL_IF, LITERAL_SWITCH, LITERAL_SYNCHRONIZED, 
             LITERAL_TRY, LITERAL_WHILE, METHOD_DEF"/> -->
         <module name="LeftCurly">
             <property name="option" value="nl" />
-            <property name="maxLineLength" value="120" />
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_blocks.html -->
