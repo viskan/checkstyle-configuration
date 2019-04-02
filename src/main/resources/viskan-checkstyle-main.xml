@@ -504,6 +504,7 @@
                     java.util.LinkedHashMap,
                     java.util.LinkedHashSet " />
             <property name="legalAbstractClassNames" value="AbstractWrappedValueModel, AbstractValueModel, AbstractHyperlinkAction" />
+            <property name="tokens" value="ANNOTATION_FIELD_DEF, INTERFACE_DEF, METHOD_CALL, METHOD_DEF, METHOD_REF, PARAMETER_DEF, VARIABLE_DEF"/>
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_coding.html -->
