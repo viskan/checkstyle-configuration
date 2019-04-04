@@ -21,11 +21,6 @@
 
         <property name="tabWidth" value="4" />
 
-        <module name="SuppressionCommentFilter">
-            <property name="offCommentFormat" value="CSOFF" />
-            <property name="onCommentFormat" value="CSON" />
-        </module>
-
         <!-- [aab] add in order to check whitespaces -->
         <module name="EmptyForInitializerPad">
             <property name="option" value="space" />
@@ -672,6 +667,11 @@
         <!-- <property name="format" value="^[\\s\\}\\);]*$"/> -->
         <!--<module name="TrailingComment"> </module> -->
 
+    </module>
+    
+    <module name="SuppressWithPlainTextCommentFilter">
+        <property name="offCommentFormat" value="CSOFF" />
+        <property name="onCommentFormat" value="CSON" />
     </module>
 
     <module name="RegexpMultiline">
