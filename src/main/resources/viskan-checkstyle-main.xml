@@ -16,6 +16,14 @@
     <!-- Checks for long source files. -->
     <!-- <property name="max" value="2000"/> -->
     <!-- module name="FileLength"> </module -->
+    
+    <!-- See http://checkstyle.sourceforge.net/config_sizes.html -->
+    <!-- Checks for long lines. -->
+    <!-- <property name="ignorePattern" value="^$"/> -->
+    <!-- <property name="max" value="80"/> -->
+    <module name="LineLength">
+        <property name="max" value="200" />
+    </module>
 
     <module name="TreeWalker">
 
@@ -39,22 +47,24 @@
 
         <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocMethod -->
         <!-- Checks to ensure that the javadoc tags exist (if required) -->
-        <!-- <property name="scope" value="private"/> -->
+        <!-- <property name="accessModifiers" value="private"/> -->
         <!-- <property name="excludeScope" value=""/> -->
-        <!-- <property name="allowUndeclaredRTE" value="false"/> -->
         <!-- <property name="allowThrowsTagsForSubclasses" value="false"/> -->
         <!-- <property name="allowMissingParamTags" value="false"/> -->
-        <!-- <property name="allowMissingThrowsTags" value="false"/> -->
         <!-- <property name="allowMissingReturnTag" value="false"/> -->
         <!-- <property name="tokens" value="METHOD_DEF, CTOR_DEF"/> -->
         <module name="JavadocMethod">
-            <property name="scope" value="protected" />
+            <property name="accessModifiers" value="protected" />
             <property name="allowMissingParamTags" value="true" />
-            <property name="allowMissingThrowsTags" value="true" />
             <property name="allowMissingReturnTag" value="true" />
-            <property name="allowMissingPropertyJavadoc" value="true" />
             <property name="tokens" value="METHOD_DEF" />
-            <property name="allowUndeclaredRTE" value="true" />
+        </module>
+        
+        <!-- https://checkstyle.sourceforge.io/config_javadoc.html#MissingJavadocMethod -->
+        <module name="MissingJavadocMethod">
+            <property name="scope" value="protected" />
+            <property name="allowMissingPropertyJavadoc" value="true"/>
+            <property name="tokens" value="METHOD_DEF" />
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocVariable -->
@@ -202,14 +212,6 @@
         <!-- <property name="max" value="30"/> -->
         <!-- <property name="tokens" value="CTOR_DEF, METHOD_DEF, INSTANCE_INIT, STATIC_INIT"/> -->
         <!--<module name="ExecutableStatementCount"> </module> -->
-
-        <!-- See http://checkstyle.sourceforge.net/config_sizes.html -->
-        <!-- Checks for long lines. -->
-        <!-- <property name="ignorePattern" value="^$"/> -->
-        <!-- <property name="max" value="80"/> -->
-        <module name="LineLength">
-            <property name="max" value="200" />
-        </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_sizes.html -->
         <!-- Checks for long methods and constructors. -->
@@ -541,6 +543,8 @@
         <!-- See http://checkstyle.sourceforge.net/config_coding.html -->
         <!-- Checks for the use of unnecessary parentheses. -->
         <module name="UnnecessaryParentheses">
+            <!-- Excluded: LAND, EQUAL -->
+            <property name="tokens" value="LOR, EXPR,IDENT,NUM_DOUBLE,NUM_FLOAT,NUM_INT,NUM_LONG,STRING_LITERAL,LITERAL_NULL,LITERAL_FALSE,LITERAL_TRUE,ASSIGN,BAND_ASSIGN , BOR_ASSIGN , BSR_ASSIGN , BXOR_ASSIGN , DIV_ASSIGN , MINUS_ASSIGN , MOD_ASSIGN , PLUS_ASSIGN,SL_ASSIGN,SR_ASSIGN,STAR_ASSIGN,LAMBDA,TEXT_BLOCK_LITERAL_BEGIN,LITERAL_INSTANCEOF,GT,LT,GE,LE,NOT_EQUAL,UNARY_MINUS,UNARY_PLUS,INC,DEC,LNOT,BNOT,POST_INC,POST_DEC"/>
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_design.html -->
