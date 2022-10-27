@@ -34,7 +34,6 @@
             <property name="option" value="space" />
         </module>
 
-        <!-- [aab] end -->
         <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocType -->
         <!-- Checks Javadoc comments for class and interface definitions. -->
         <!-- <property name="scope" value="private"/> -->
@@ -43,6 +42,11 @@
         <!-- <property name="versionFormat" value=""/> -->
         <!-- <property name="tokens" value="INTERFACE_DEF, CLASS_DEF"/> -->
         <module name="JavadocType">
+        </module>
+
+        <!-- https://checkstyle.sourceforge.io/config_javadoc.html#MissingJavadocType -->
+        <module name="MissingJavadocType">
+          <property name="scope" value="private"/>
         </module>
 
         <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocMethod -->
